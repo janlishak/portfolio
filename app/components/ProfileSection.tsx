@@ -11,11 +11,11 @@ const ProfileSection = () => {
 				</div>
 
 				<div className="space-y-3">
-					<h1 className="text-2xl md:text-3xl font-bold text-gray-900">John Doe</h1>
+					<h1 className="text-2xl md:text-3xl font-bold text-gray-900">Jan Lishak</h1>
 					<h2 className="text-lg md:text-xl text-gray-600">Senior Software Engineer</h2>
 					<div className="h-px w-16 bg-gray-200 mx-auto my-4" />
 					<p className="text-sm md:text-base text-gray-600 max-w-xs mx-auto leading-relaxed">
-						15+ years building scalable systems and leading engineering teams
+						21+ years building scalable systems and leading engineering teams
 					</p>
 				</div>
 
