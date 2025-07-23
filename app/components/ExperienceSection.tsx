@@ -1,24 +1,43 @@
 const ExperienceSection = () => {
 	const experiences = [
 		{
-			role: 'Senior Software Engineer',
-			company: 'Tech Corp',
-			period: '2020 - Present',
-			highlights: 'Led development of microservices architecture, 40% improvement in system performance',
+			role: 'MSc Computer Science (Robotics)',
+			company: 'IT University of Copenhagen',
+			period: '2023 – 2025',
+			highlights: 'Specialization in robotics, parallel computing, machine learning, games development',
 		},
 		{
-			role: 'Software Engineer',
-			company: 'Innovation Labs',
-			period: '2017 - 2020',
-			highlights: 'Architected cloud-native applications, mentored junior developers',
+			role: 'DevOps / Full Stack Engineer',
+			company: 'Bluefaces s.r.o.',
+			period: '2023 – 2025',
+			highlights: 'Linux virtualization, DevOps, Proxmox, Docker, AWS cloud infrastructure, full stack development',
 		},
 		{
-			role: 'Full Stack Developer',
-			company: 'StartUp Inc',
-			period: '2015 - 2017',
-			highlights: 'Built scalable web applications using React and Node.js',
+			role: 'Erasmus Exchange – Cloud & Rendering',
+			company: 'Liverpool John Moores University',
+			period: '2022',
+			highlights: 'Studied cloud systems, games and real-time rendering',
+		},
+		{
+			role: 'Full Stack Intern',
+			company: 'Anasoft s.r.o.',
+			period: '2021',
+			highlights: 'Worked with Vue.js frontend, Java Android app, and Java backend, software research',
+		},
+		{
+			role: 'Makerspace Coordinator (Student Job)',
+			company: 'Via University Makerspace',
+			period: '2020',
+			highlights: 'Operated and maintained 3D printers, laser cutters, CNC machines',
+		},
+		{
+			role: 'BSc Software Engineering',
+			company: 'Via University',
+			period: '2019 – 2023',
+			highlights: 'Focused on backend development, software engineering principles, software architecture',
 		},
 	];
+
 
 	return (
 		<div className="py-6 bg-white px-6">
