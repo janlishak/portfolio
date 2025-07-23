@@ -47,12 +47,15 @@ const ExperienceSection = () => {
 					<div className="h-px w-full bg-gray-200 mt-2" />
 				</div>
 
-				<div className="space-y-5">
-					{experiences.map((exp) => (
-						<div key={exp.company} className="relative">
+				<div className="max-h-96 overflow-y-auto pr-2 pl-4 space-y-5 custom-scrollbar">
+					{experiences.map((exp, index) => (
+						<div
+							key={exp.company}
+							className="relative -ml-2 opacity-0 animate-fade-in-up"
+							style={{ animationDelay: `${index * 100}ms` }}
+						>
 							<div className="relative pl-4 border-l-2 border-gray-200">
 								<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300" />
-
 								<div className="space-y-1">
 									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
 										<h4 className="text-md font-medium text-gray-900">{exp.role}</h4>

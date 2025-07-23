@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Transparent minimalist scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.1); /* more transparent */
+	border-radius: 9999px;
+}
+
+/* Fade-in-up animation */
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in-up {
+	animation: fade-in-up 0.4s ease-out forwards;
+}
+
+@-moz-document url-prefix() {
+	.custom-scrollbar {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(0, 0, 0, 0.08) transparent;
+	}
+}
