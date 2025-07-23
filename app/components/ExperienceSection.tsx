@@ -39,7 +39,7 @@ const ExperienceSection = () => {
 	];
 
 
-	return (
+return (
 		<div className="py-6 bg-white px-6">
 			<div className="space-y-4 max-w-2xl mx-auto">
 				<div>
@@ -47,26 +47,32 @@ const ExperienceSection = () => {
 					<div className="h-px w-full bg-gray-200 mt-2" />
 				</div>
 
-				<div className="max-h-96 overflow-y-auto pr-2 pl-4 space-y-5 custom-scrollbar">
-					{experiences.map((exp, index) => (
-						<div
-							key={exp.company}
-							className="relative -ml-2 opacity-0 animate-fade-in-up"
-							style={{ animationDelay: `${index * 100}ms` }}
-						>
-							<div className="relative pl-4 border-l-2 border-gray-200">
-								<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300" />
-								<div className="space-y-1">
-									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-										<h4 className="text-md font-medium text-gray-900">{exp.role}</h4>
-										<span className="text-sm text-gray-500">{exp.period}</span>
+				{/* Scrollable wrapper with fade overlay */}
+				<div className="relative">
+					<div className="max-h-[22rem] overflow-y-auto pr-2 pl-4 space-y-5 custom-scrollbar scroll-smooth">
+						{experiences.map((exp, index) => (
+							<div
+								key={exp.company}
+								className="relative -ml-2 opacity-0 animate-fade-in-up"
+								style={{ animationDelay: `${index * 100}ms` }}
+							>
+								<div className="relative pl-4 border-l-2 border-gray-200">
+									<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300" />
+									<div className="space-y-1">
+										<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+											<h4 className="text-md font-medium text-gray-900">{exp.role}</h4>
+											<span className="text-sm text-gray-500">{exp.period}</span>
+										</div>
+										<p className="text-sm font-medium text-gray-600">{exp.company}</p>
+										<p className="text-sm text-gray-600 leading-relaxed">{exp.highlights}</p>
 									</div>
-									<p className="text-sm font-medium text-gray-600">{exp.company}</p>
-									<p className="text-sm text-gray-600 leading-relaxed">{exp.highlights}</p>
 								</div>
 							</div>
-						</div>
-					))}
+						))}
+					</div>
+
+					{/* Bottom fade-out overlay */}
+					<div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent" />
 				</div>
 			</div>
 		</div>
