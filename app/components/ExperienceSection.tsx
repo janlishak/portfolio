@@ -1,7 +1,7 @@
 const ExperienceSection = () => {
 	const experiences = [
 		{
-			role: 'MSc Computer Science (Robotics)',
+			role: 'MSc Computer Science',
 			company: 'IT University of Copenhagen',
 			period: '2023 – 2025',
 			highlights: 'Specialization in robotics, parallel computing, machine learning, and game development',

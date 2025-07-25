@@ -1,33 +1,33 @@
 const SkillsSection = () => {
-	const skills = [
-		{
-			category: 'Languages',
-			items: ['Python', 'TypeScript', 'Java', 'Rust'],
-			icon: (
-				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
-					<path d="M8 3v3a2 2 0 01-2 2H3m18 0h-3a2 2 0 01-2-2V3M3 16v3a2 2 0 002 2h3m8-2h3a2 2 0 002-2v-3" />
-				</svg>
-			),
-		},
-		{
-			category: 'Backend',
-			items: ['Node.js', 'PostgreSQL', 'Deno', 'Supabase'],
-			icon: (
-				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
-					<path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
-				</svg>
-			),
-		},
-		{
-			category: 'Cloud',
-			items: ['AWS', 'Docker', 'CI/CD', 'Proxmox'],
-			icon: (
-				<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
-					<path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-				</svg>
-			),
-		},
-	];
+const skills = [
+	{
+		category: 'Backend',
+		items: ['Python', 'Rust', 'C#', 'Java', 'Deno', 'REST APIs', 'Node.js', 'PostgreSQL'],
+		icon: (
+			<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
+				<path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
+			</svg>
+		),
+	},
+	{
+		category: 'Cloud',
+		items: ['AWS', 'Docker', 'Terraform', 'GitHub Actions', 'Linux', 'Systemd', 'CI/CD', 'RabbitMQ'],
+		icon: (
+			<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
+				<path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+			</svg>
+		),
+	},
+	{
+		category: 'Frontend',
+		items: ['TypeScript', 'Angular'],
+		icon: (
+			<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#9DA2AF" strokeWidth="2">
+				<path d="M4 6h16M4 12h8m-8 6h16" />
+			</svg>
+		),
+	},
+];
 
 	return (
 		<div className="py-6 bg-white px-6">
@@ -37,7 +37,7 @@ const SkillsSection = () => {
 					<div className="h-px w-full bg-gray-200 mt-2" />
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 					{skills.map((skillGroup) => (
 						<div key={skillGroup.category}>
 							<div className="flex items-center space-x-2 mb-2">
